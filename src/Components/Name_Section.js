@@ -2,6 +2,7 @@ import React from 'react'
 import '../CSS/Name_Section.css'
 import Typewriter from 'typewriter-effect';
 
+
 const Name_Section = () => {
   return (
     <>
@@ -19,7 +20,7 @@ const Name_Section = () => {
         
 
         <div className='button'>
-             <button><a href="/Resume_Manpreet.pdf" download>Download Cv</a></button>
+             <button><a href="../Components/Resume_Manpreet.pdf" target="_blank" >Download Cv</a></button>
              <button>Contact Me</button> 
         </div>
 
