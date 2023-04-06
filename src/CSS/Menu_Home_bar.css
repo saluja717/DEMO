@@ -1,0 +1,118 @@
+*{
+    margin:0%;
+    /* overflow-x: hidden; */
+}
+
+
+.menu{
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+    background-repeat: no-repeat;
+    background-position:cover;    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.menu_main{
+    display:flex;
+    position:relative;
+    top:0%;
+    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu_name{
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 25%;
+}
+
+
+.menu_list{
+  position: relative;
+  width:70%;
+}
+
+.menu_ul_list{
+   display: flex;
+   position: relative;
+   list-style: none;
+   justify-content: space-around;
+   align-items: center;
+   top:5px;
+   color:white;
+
+}
+
+.menu_list_media{
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+     height:100vh;
+     position:absolute;
+     top:0%;
+     right:0%;
+     padding:30px;
+     width: 50%;
+     /* display:none; */
+     z-index: 1;
+     transform:translateX(100%);
+     transition: all 2s ease;
+}
+
+.menu_ul_list_media{
+    text-align: center;
+    padding: 10px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.menu_ul_list_media a {
+    text-decoration: none;
+    color:black;
+}
+
+ .menu_ul_list a{
+    text-decoration: none;
+    color:white;
+} 
+
+
+.menu_ul_list_media li{
+    margin-bottom: 50px;
+}
+
+@media (max-width:620px){
+    .menu_name{
+        width: auto;
+        position: relative;
+        margin-left:10px;
+    }
+    .menu_list{
+        display: none;
+    }
+    .open{
+        position:absolute;
+        right:13%;
+        top:3px;
+        font-size: 25px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    .show{
+        color:white;
+        font-size: 30px;
+        top:-2px;
+        position: relative;
+        right:20px;
+    }
+   
+}
