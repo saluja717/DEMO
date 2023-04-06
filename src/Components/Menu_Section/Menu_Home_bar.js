@@ -1,5 +1,7 @@
 import React from 'react'
-import '../CSS/Menu_Home_bar.css'
+import '../../CSS/Menu_Home_bar.css'
+import {FaBars} from "react-icons/fa";
+import { MdClose } from "react-icons/md";
 
 const Menu_Home_bar = () => {
 
@@ -21,7 +23,7 @@ const Menu_Home_bar = () => {
      
   return (
     <div>
-                <div className='menu_main'>
+       <div className='menu_main'>
 
         <div className='menu_name'>PORTFOLIO</div>
 
@@ -35,9 +37,9 @@ const Menu_Home_bar = () => {
         </div>
         
         <div className='media_show'>
-        <div id='show' className='show' onClick={open}>=</div>
+        <div id='show' className='show' onClick={open}>{<FaBars/>}</div>
         <div id="menu_list_media" className='menu_list_media'>
-        <div id='open' className='open' onClick={change}>X</div>
+        <div id='open' className='open' onClick={change}>{<MdClose/>}</div>
         <ul className='menu_ul_list_media'>
             <li><a href="#">HOME</a></li>
             <li><a href="#">ACADEMICS</a></li>

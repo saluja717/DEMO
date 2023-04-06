@@ -1,6 +1,7 @@
 import React from 'react'
-import '../CSS/Name_Section.css'
+import '../../CSS/Name_Section.css'
 import Typewriter from 'typewriter-effect';
+import PDF from '../../Components/Menu_Section/Resume_Manpreet.pdf'
 
 
 const Name_Section = () => {
@@ -20,8 +21,8 @@ const Name_Section = () => {
         
 
         <div className='button'>
-             <button><a href="../Components/Resume_Manpreet.pdf" target="_blank" >Download Cv</a></button>
-             <button>Contact Me</button> 
+             <button data-aos="zoom-in" data-aos-delay="1000"><a href={PDF} target="_blank" >Download CV</a></button>
+             <button data-aos="zoom-in" data-aos-delay="1000">Contact Me</button> 
         </div>
 
       </div> 

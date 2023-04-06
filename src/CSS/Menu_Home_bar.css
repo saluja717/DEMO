@@ -1,7 +1,9 @@
 *{
     margin:0%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
+    /* scroll-snap-type:both mandatory; */
 }
+
 
 
 .menu{
@@ -11,7 +13,9 @@
     background-size: cover;
     position: relative;
     height: 100vh;
+    /* scroll-snap-align:start; */
     overflow: hidden;
+    z-index:100;
 }
 
 
@@ -23,6 +27,7 @@
     padding: 10px;
     justify-content: space-between;
     width: 100%;
+    overflow: hidden;
 }
 
 .menu_name{
@@ -74,6 +79,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 70%;
+    position: relative;
 }
 
 .menu_ul_list_media li a {
@@ -110,14 +116,60 @@
         font-size: 25px;
         border: 1px solid black;
         border-radius: 50%;
+        z-index:100;
     }
 
     .show{
         color:white;
         font-size: 30px;
-        top:-2px;
+        top:-4px;
         position: relative;
-        right:20px;
+        width:30px;
+        z-index:100;
+        margin-right: 14px;
+    }
+
+    .media_show{
+        height: 100vh;
     }
    
 }
+
+
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #C2C6B7 #EFE6E6;
+  }
+  
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    width: 4px;
+    width: 4px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: #EFE6E6;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #F5F5F5;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #E1EADD;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #C2C6B7;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #F0F0F4;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #F9F9FF;
+  }
