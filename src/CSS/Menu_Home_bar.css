@@ -74,12 +74,12 @@
     height: 70%;
 }
 
-.menu_ul_list_media a {
+.menu_ul_list_media li a {
     text-decoration: none;
     color:black;
 }
 
- .menu_ul_list a{
+ .menu_ul_list li a{
     text-decoration: none;
     color:white;
 } 
