@@ -78,6 +78,9 @@
     text-decoration: none;
     color:black;
 }
+.menu_ul_list_media li{
+     list-style:none;
+}
 
  .menu_ul_list li a{
     text-decoration: none;
