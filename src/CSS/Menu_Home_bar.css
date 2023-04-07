@@ -100,6 +100,10 @@
     margin-bottom: 50px;
 }
 
+.show{
+  display: none;
+}
+
 @media (max-width:620px){
     .menu_name{
         width: auto;
@@ -126,6 +130,7 @@
         position: relative;
         width:30px;
         z-index:100;
+        display: block;
         margin-right: 14px;
     }
 
