@@ -30,7 +30,7 @@ const Partical_Component = () => {
         fullScreen:{
           enable:true,
         },
-        fpsLimit: 80,
+        fpsLimit: 60,
         interactivity: {
             events: {
                 onClick: {
@@ -45,10 +45,10 @@ const Partical_Component = () => {
             },
             modes: {
                 push: {
-                    quantity: 5,
+                    quantity: 2,
                 },
                 repulse: {
-                    distance: 200,
+                    distance: 180,
                     duration: 0.4,
                 },
             },
@@ -80,7 +80,7 @@ const Partical_Component = () => {
             number: {
                 density: {
                     enable: true,
-                    area: 600,
+                    area: 400,
                 },
                 value: 40,
             },
@@ -91,7 +91,7 @@ const Partical_Component = () => {
                 type: "square",
             },
             size: {
-                value: { min: 1, max: 5 },
+                value: { min: 1, max: 2 },
             },
         },
         detectRetina: true,

@@ -21,7 +21,7 @@ const Name_Section = () => {
         
 
         <div className='button'>
-             <button data-aos="zoom-in" data-aos-delay="1000"><a href={PDF} target="_blank" >Download CV</a></button>
+             <button data-aos="zoom-in" data-aos-delay="1000"><a href="#" target="_blank" >Download CV</a></button>
              <button data-aos="zoom-in" data-aos-delay="1000">Contact Me</button> 
         </div>
 

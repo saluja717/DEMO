@@ -1,0 +1,45 @@
+
+.skill_main{
+     position: relative;
+     /* height:100vh; */
+     /* background-color: red; */
+     overflow: hidden;
+}
+
+.skill_heading{
+    width:100%;
+    text-align: center;
+    margin-top:40px;
+    font-size: 35px;
+    font-weight: bolder;
+    text-decoration:underline;
+    text-underline-offset:6px;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.skill_list{
+    
+   display:flex;
+   justify-content:space-around;
+   flex-wrap: wrap; 
+   align-items:center;
+   overflow: hidden;
+   row-gap:100px;
+}
+
+.skill_list_no{
+    height:auto;
+    overflow: hidden;
+}
+
+.skill_list_no > div{
+     font-size:12em; 
+}
+
+.skill_list_no > p {
+     text-align:center;
+     font-size:30px;
+     color:white;
+     margin-top:-40px;
+}
