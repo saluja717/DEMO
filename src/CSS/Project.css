@@ -1,0 +1,120 @@
+.project_main , .responsive_project_main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow:hidden;
+    /* background-color: red; */
+}
+
+.project_heading , .responsive_project_heading{
+    font-size:40px;
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset:6px;
+    margin-top:35px;
+}
+
+.project_list{
+    position: relative;
+    height:70%;
+    width: 70%;
+    /* background-color:red; */
+    margin:7% auto;
+    display:flex;
+    overflow: hidden;
+    column-gap:10px;
+    /* border: 1px solid blue; */
+    border: 8px double #ffffff;
+    box-shadow: 5px -2px 11px 0px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 5px -2px 11px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: 5px -2px 11px 0px rgba(255,255,255,0.75);
+}
+
+.project_image{
+     overflow: hidden;
+     width: 100%;
+     height:100%;
+}
+
+.project_image > img{
+    background-size: cover;
+}
+
+.project_image:hover {
+    /* transform: scale(1.1); */
+    position:absolute;
+
+} 
+
+ .project_image:hover > img {
+     background-size: cover;
+     width:100%;
+     height: 100%;
+     left:0;
+}
+
+
+.project_image:hover > div {
+    display:block;
+}
+
+.project_image > div{
+     color:black;
+     position:absolute;
+     font-size:20px;
+     /* top:0; */
+     bottom:0;
+     width:100%;
+     padding:0 10px;
+     background-color: white;
+     opacity:0.5;
+     text-align: center;
+     display: none;
+}
+
+.responsive_project_main{
+      display:none;
+}
+
+.responsive_project_list{
+      position: relative;
+      overflow: hidden;
+      width:100%;
+      text-align:center;
+}
+
+.responsive_project_image >img {
+    height: 100%;
+    width: 80%;
+    position: relative;
+    margin:0px auto;
+    margin-top: 20px;
+    border: 1px solid red;
+}
+
+.project_root {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+@media (max-width:620px){
+    .project_main{
+        display:none;
+    }
+    .responsive_project_main{
+        display:block;
+        height:auto;
+    }
+    .responsive_project_image > div{
+          color:black;
+          position: relative;
+          background-color:white;
+          opacity:0.7;
+          width:80%;
+          margin:0px auto;
+    }
+}
